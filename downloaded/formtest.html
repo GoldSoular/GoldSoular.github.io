@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--
+name
+email
+phone
+cake type
+cake size
+date required
+-->
+
+
+<!-- Forms -->
+<section class="forms">
+    <div class="container">
+        <div class="title"><img src="images/logo.png" alt="Special Cakes Logo"></div>
+        <form action="">
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="name" class="details">Full Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="size" class="details">Cake Size</label>
+                    <select id="cakesize" name="cakesize" size="1" required>
+                        <option disabled selected value>select an option</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="phone" class="details">Phone</label>
+                    <input type="text" name="phone" id="phone" required>
+                </div>
+                <div class="input-box">
+                    <label for="type" class="details">Cake Type</label>
+                    <select id="cakesize" name="cakesize" size="1" required>
+                        <option disabled selected value>select an option</option>
+                        <option value="specialty">Specialty Cakes</option>
+                        <option value="flavoured">Flavoured Cakes</option>
+                        <option value="cheesecake">Cheescakes</option>
+                        <option value="brownie">Brownies</option>
+                        <option value="cupcake">Cupcakes</option>
+                        <option value="macaron">Macarons</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="email" class="details">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="required" class="details">Date Required</label>
+                    <input type="date" name="required" id="required" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Place Order">
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
