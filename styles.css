@@ -31,7 +31,7 @@ body.hovered-item5{
 
 .container {
   --padding: 10em;
-  padding: 7em 0 0 0;
+  padding: 5em 0 0 0;
   margin: 0;
   margin: auto;
 
@@ -78,7 +78,7 @@ body.hovered-item5{
 #original-bento{
   visibility: hidden;
   position: absolute;
-  top: 51%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
@@ -86,7 +86,7 @@ body.hovered-item5{
 }
 
 .original{
-  height: 48em;
+  height: 45em;
 }
 
 .button {
