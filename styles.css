@@ -1,0 +1,112 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+body{
+  transition: background 0.3s ease;
+  background: white;
+}
+
+body.hovered-item1{
+  background: #e0b862;
+}
+
+body.hovered-item2{
+  background: #c082a1;
+}
+
+body.hovered-item3{
+  background: #1e8fbb;
+}
+
+body.hovered-item4{
+  background: #6fac86;
+}
+
+body.hovered-item5{
+  background: #c76648;
+}
+
+.container {
+  --padding: 10em;
+  padding: 7em 0 0 0;
+  margin: 0;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 3em;
+  
+  height: calc(100% - (2 * var(--padding)));
+  width: 60%;
+}
+
+.item1 {
+  grid-row: span 8;
+}
+
+.item2 {
+  grid-row: 9 / span 7;
+}
+
+.item3 {
+  grid-column: 2;
+  grid-row: span 15;
+}
+
+.item4 {
+  grid-column: 3;
+  grid-row: 1 / span 10;
+}
+
+.item5 {
+  grid-column: 3;
+  grid-row: 11 / span 5;
+}
+
+.item img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+#original-bento{
+  visibility: hidden;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  transition: visibility 0s, opacity 0.5s; /* Apply transition to opacity */
+}
+
+.original{
+  height: 48em;
+}
+
+.button {
+  text-align: center;
+}
+
+.button button {
+  background-color: #418341;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  padding: 1.5em 1em 1em 1em;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button button:hover {
+  background-color: #365538;
+}
