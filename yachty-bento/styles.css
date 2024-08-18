@@ -30,7 +30,7 @@ body.hovered-item5 {
 }
 
 .container {
-  margin: 6em auto;
+  margin: 4em auto;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
